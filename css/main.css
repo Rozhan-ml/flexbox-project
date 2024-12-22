@@ -11,25 +11,57 @@
     src: url(../font/Maktab/MaktabRita-Regular.woff) format("woff");
     src: url(../font/Maktab/MaktabRita-Regular.woff2) format("woff2");
 }
+
 /* Font */
 /* Variables */
 :root{
-    --clr-primary-1:#2f6690;
-    --clr-primary-2:#3a7ca5;
+    --clr-primary-1:#6b8f71;
+    --clr-primary-2:#d8959b;
     --clr-BG:#f4f3f1;
-    --ff-primary:"Maktab",sans-serif;
-    --transition:all 0.3s linear;
-    --light-shadow:0 5px 15px rgba(0,0,0,0.1);
-    --dark-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    --ff-primary-1:"Maktab",sans-serif;
+    --ff-primary-2:"Caveat", serif;
+    --transition: all 0.3s linear;
+    --light-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+} a {
+    text-decoration: none;
 }
+p{
+    margin-bottom: 1.25rem;
+}
+
+.btn{
+    background: var(--clr-primary-2);
+    color: var(--clr-primary-1);
+    display: inline-block;
+    transition: var(--transition);
+    padding: 0.025rem 1rem;
+    font-size: 2rem;
+    border: 0.25px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+.btn:hover{ 
+     color: var(--clr-primary-2);
+background:var(--clr-primary-1);
+}
+
+.btn-hero{
+    
+    padding-bottom: 1rem;
+}
+
+
 body{
-font-family: var(--ff-primary);
+font-family: var(--ff-primary-1);
 background: var(--clr-BG);
 color: black;
 line-height: 1.5;
-font-size: 0.875rem;
+font-size: 2rem;
 }
-
+.en{
+    font-family: var(--ff-primary-2);
+}
 
 
 
