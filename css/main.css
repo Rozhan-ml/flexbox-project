@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+/* Font */
+@font-face {
+    font-family: "Maktab";
+    src: url(../font/Maktab/MaktabRita-Regular.ttf) format("ttf");
+    src: url(../font/Maktab/MaktabRita-Regular.woff) format("woff");
+    src: url(../font/Maktab/MaktabRita-Regular.woff2) format("woff2");
+}
+/* Font */
+/* Variables */
+:root{
+    --clr-primary-1:#2f6690;
+    --clr-primary-2:#3a7ca5;
+    --clr-BG:#f4f3f1;
+    --ff-primary:"Maktab",sans-serif;
+    --transition:all 0.3s linear;
+    --light-shadow:0 5px 15px rgba(0,0,0,0.1);
+    --dark-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+body{
+font-family: var(--ff-primary);
+background: var(--clr-BG);
+color: black;
+line-height: 1.5;
+font-size: 0.875rem;
+}
+
+
+
+
+
+
+
+
+
+
