@@ -6,19 +6,23 @@
 
 /* Font */
 @font-face {
-    font-family: "Maktab";
-    src: url(../font/Maktab/MaktabRita-Regular.ttf) format("ttf");
-    src: url(../font/Maktab/MaktabRita-Regular.woff) format("woff");
-    src: url(../font/Maktab/MaktabRita-Regular.woff2) format("woff2");
+    font-family: "vazir";
+    src: url(../font/vazir-font-v16.1.0/Vazir-Light.eot) format("eot");
+    src: url(../font/vazir-font-v16.1.0/Vazir-Light.ttf) format("ttf");
+    src: url(../font/vazir-font-v16.1.0/Vazir-Light.woff) format("woff");
+    src: url(../font/vazir-font-v16.1.0/Vazir-Light.woff2) format("woff2");
+
 }
 
 /* Font */
 /* Variables */
 :root{
-    --clr-primary-1:#6b8f71;
-    --clr-primary-2:#d8959b;
+    --clr-primary-1:#e0e1dd;
+    --clr-primary-2:#1b263b;
+    --clr-primary-3:#778da9;
+
     --clr-BG:#f4f3f1;
-    --ff-primary-1:"Maktab",sans-serif;
+    --ff-primary-1:"vazir",sans-serif;
     --ff-primary-2:"Caveat", serif;
     --transition: all 0.3s linear;
     --light-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
@@ -36,22 +40,15 @@ p{
     display: inline-block;
     transition: var(--transition);
     padding: 0.025rem 1rem;
-    font-size: 2rem;
-    border: 0.25px solid transparent;
+    font-size: rem;
+    border: 2.5px solid transparent;
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 .btn:hover{ 
      color: var(--clr-primary-2);
 background:var(--clr-primary-1);
-}
-
-.btn-hero{
-    
-    padding-bottom: 1rem;
-}
-
-
+ }
 body{
 font-family: var(--ff-primary-1);
 background: var(--clr-BG);
@@ -63,11 +60,50 @@ font-size: 2rem;
     font-family: var(--ff-primary-2);
 }
 
+.hero {
+ min-height: 100vh;
+background-color: var(--clr-primary-3);
+display:flex;
+justify-content: center;
+align-items: center;
+} 
 
 
+.hero-banner {
+    padding: 0 2rem;
+    text-align: center;
+}
 
+.hero-banner p {
+    max-width: 35rem;
+    margin: 2rem;
+}
 
+.title-banner {
+    margin-bottom: 3rem;
+}
 
+.btn-hero {
+    padding: 0.5rem 1.2rem;
+    font-size: 1.5rem;
+background: var();
+}
 
+.btn-hero:hover{
+    background: transparent;
+    color: var(--clr-primary-1);
+    border-color: var(--clr-primary-1);
+}
+@media screen and (min-width: 768px){
 
+    .hero{
+        background:linear-gradient(#778da9,rgba(0, 0, 0,0.7)),url("../image/main.jpg") center/cover no-repeat;
+    }
+    .hero-banner{
+        padding: 0;
+    }
+    .hero-banner p{
+     max-width: 45rem;
+    }
 
+}
