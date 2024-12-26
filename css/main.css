@@ -30,10 +30,13 @@
 } a {
     text-decoration: none;
 }
-p{
-    margin-bottom: 1.25rem;
+img {
+    width: 100%;
+    display: block;
 }
-
+.en{
+    font-family: var(--ff-primary-2);
+}
 .btn{
     background: var(--clr-primary-2);
     color: var(--clr-primary-1);
@@ -54,12 +57,37 @@ font-family: var(--ff-primary-1);
 background: var(--clr-BG);
 color: black;
 line-height: 1.5;
-font-size: 2rem;
+font-size: 0.875rem;
 }
-.en{
-    font-family: var(--ff-primary-2);
+.section{
+    padding: 5rem 0;
 }
+.section-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  
+    }
+    .section-title b {
+    color:var(--clr-primary-3);
+        }
+    
+    .section-center {
+        width: 90vw;
+        margin: 0 auto;
+        max-width: 1170px;
+    }  
+    
+    @media screen and (min-width:992px){
+        .section-center {
+            width: 95vw;
+            max-width: 1170px;
+        }  
+    }
 
+
+
+/*****************HERO****************/
 .hero {
  min-height: 100vh;
 background-color: var(--clr-primary-3);
@@ -67,7 +95,12 @@ display:flex;
 justify-content: center;
 align-items: center;
 } 
-
+p{
+    margin-bottom: 1.25rem;
+}
+h1 {
+    font-size: 3rem;
+}
 
 .hero-banner {
     padding: 0 2rem;
@@ -75,6 +108,7 @@ align-items: center;
 }
 
 .hero-banner p {
+    font-size: 1.25rem;
     max-width: 35rem;
     margin: 2rem;
 }
@@ -97,7 +131,7 @@ background: var();
 @media screen and (min-width: 768px){
 
     .hero{
-        background:linear-gradient(#778da9,rgba(0, 0, 0,0.7)),url("../image/main.jpg") center/cover no-repeat;
+        background:linear-gradient(#778da9,rgba(0, 0, 0,0.6)),url("../image/Back.jpg") center/cover no-repeat;
     }
     .hero-banner{
         padding: 0;
@@ -105,5 +139,40 @@ background: var();
     .hero-banner p{
      max-width: 45rem;
     }
+}
 
+/**********ABOUT*********/
+.about-img{
+    margin-bottom: 2rem;
+}
+@media screen and (min-width:992px) {
+    .about-center{
+        display: flex;
+        justify-content: space-between;
+    }
+    .about-img{
+        margin-bottom: 0rem;
+    }
+    .about-img, .about-info{
+flex: 0 0 calc(50% - 2rem);
+align-self: center;
+    }
+
+}
+
+@media screen and (min-width:1170px) {
+  
+    .about-img {
+position: relative;
+    }
+    .about-img::before {
+       content: "";
+       border: 0.5rem solid var(--clr-primary-2);
+       width: 98%;
+       position: absolute;
+       height: 98%;
+       top: -1.2rem;
+       right: -1.2rem;
+       z-index: -1;
+    }
 }
